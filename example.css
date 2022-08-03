@@ -1,0 +1,28 @@
+* {
+    padding: auto;
+    margin: auto;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#box-1 {
+    color: blue;
+    background-color: rgb(7, 230, 230);
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid rgb(190, 12, 235);
+    text-align: center;
+}
+
+#box-2 {
+    color: blueviolet;
+    background-color: rgb(219, 109, 214);
+    padding: 20px;
+    margin: 20px;
+    border: 10px solid rgb(12, 25, 206);
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    box-sizing: border-box;    
+
+}
