@@ -7,6 +7,8 @@
     --header: 3rem;
     --footer: 40px;
     --main: calc(100vh - calc(var(--header) + var(--footer)));
+
+    --font-color: rgb(238, 231, 231);
 }
 
 body {
@@ -14,6 +16,8 @@ body {
 	padding: 0;
 	border: 0px solid transparent;
 	background: #7a7a7a;
+
+    color: var(--font-color);
 
 }
 
