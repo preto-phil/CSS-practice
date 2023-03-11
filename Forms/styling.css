@@ -1,0 +1,35 @@
+
+/* Rule to have font and text appearance consistent */
+
+button, 
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+/* Rule to have box sizing consistent */
+
+button,
+input,
+select,
+textarea {
+    width: 150px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Styling form legend */
+
+fieldset {
+    position: relative;
+}
+
+legend {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
