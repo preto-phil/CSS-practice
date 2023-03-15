@@ -91,3 +91,8 @@ legend {
     top: 0;
     left: 0;
 }
+
+label {
+    width: 150px;
+    text-align: right;
+}
