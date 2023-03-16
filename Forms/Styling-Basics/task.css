@@ -1,15 +1,8 @@
 * {
     box-sizing: border-box;
+    font-family: "monospace";
 }
 
-body {
-    background-color: #fff;
-    color: #333;
-    font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
-    padding: 1em;
-    margin: 0;
-    width: 500px;
-}
 
 /* Meyer Reset */
 
@@ -30,7 +23,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	/* font: inherit; */
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -93,6 +86,33 @@ legend {
 }
 
 label {
+    display: inline-block;
     width: 150px;
     text-align: right;
+}
+
+input, 
+select {
+    margin-left: 10px;
+    width: 150px;
+}
+
+label, 
+input, 
+select, 
+button {
+    margin-top: 10px;
+}
+
+.btn {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    padding: 10px;
+    width: 600px;
+    font-weight: 700;
+    font-size: 2em;
 }
