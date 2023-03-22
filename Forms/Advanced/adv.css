@@ -1,3 +1,29 @@
+/* Taking off styling from input boxes - radio and checkboxes disappear + other styling elements taken off  */
+
 input {
     appearance: none;
 }
+
+/* Taming Search Boxes */
+
+input[type='search'] {
+    appearance: none;
+}
+
+/* Taking away x in search box for OS users */
+
+input[type="search"]:not(:focus, :active)::-webkit-search-cancel-button { 
+    display: none; 
+}
+
+/* Styling checkboxes and radio */
+
+span {
+    display: inline-block;
+    background: red;
+  }
+  
+  input[type="checkbox"] {
+    width: 100px;
+    height: 100px;
+  }
