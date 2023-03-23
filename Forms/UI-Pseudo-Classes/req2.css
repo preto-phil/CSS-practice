@@ -44,6 +44,8 @@ input:hover, input:focus {
     background-color: #eee;
 }
 
+/* Adding and styling required content */
+
 input + span {
     position: relative;
 }
@@ -58,6 +60,8 @@ input:required + span::after {
     top: -26px;
     left: -70px;
 }
+
+/* Adding and styling valid/invalid content */
 
 input + span::before {
     position: absolute;
@@ -77,6 +81,30 @@ input:invalid + span::before {
 input:valid + span::before {
     content: "✓";
     color: rgb(0, 255, 0);
+}
+
+/* Adding and styling range */
+
+input + span::after {
+    font-size: 0.7rem;
+    position: absolute;
+    padding: 5px 10px;
+    top: -26px;
+}
+
+input:required + span::after {
+    content: "required";
+    color: white;
+    background-color: black;
+    left: -70px;
+}
+
+input:out-of-range + span::after {
+    color: white;
+    background: red;
+    width: 155px;
+    content: "Outside allowable value range";
+    left: -182px;
 }
 
 button {
