@@ -56,6 +56,11 @@ input:optional {
     border-radius: 5px;
 }
 
+input:hover,
+input:focus {
+    background-color: rgba(236, 233, 233, 0.9);
+}
+
 .btn {
     display: flex;
     justify-content: center;
@@ -65,4 +70,8 @@ button  {
     font-size: inherit;
 
     width: 50%;
+}
+
+button:hover {
+    cursor: pointer;
 }
