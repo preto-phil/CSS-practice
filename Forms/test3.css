@@ -60,3 +60,46 @@ button {
     width: 60%;
     margin: 0 auto;
 }
+
+/* My contribution */
+
+input + span {
+    position: relative;
+}
+
+/* required */
+
+input:required + span::before {
+    position: absolute;
+    top: -25px;
+    right: 15px;
+    
+    content: "required";
+
+    color: white;
+    background-color: black;
+    padding: 1px 3px;
+    border-radius: 2px; 
+}
+
+/* valid/invalid */
+
+input + span::after {
+    position: absolute;
+    right: -20px;
+    top: 5px;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:invalid + span::after {
+    content: "✖";
+    color: red;
+}
+
+input:valid + span::after {
+    content: "✓";
+    color: green;
+}
