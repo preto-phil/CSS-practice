@@ -51,7 +51,8 @@ body {
 }
 
 .form-row input[type="text"],
-.form-row input[type="email"] {
+.form-row input[type="email"],
+.form-row select {
     background-color: #FFFFFF;
     border: 1px solid #D6D9DC;
     border-radius: 3px;
@@ -93,6 +94,10 @@ margin-top: 2px;
 .legacy-form-row input[type="radio"] {
 float: left;
 }
+
+
+
+/* Desktop mode alterations */
 
 @media only screen and (min-width: 700px) {
     .speaker-form-header,
