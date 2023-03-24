@@ -17,3 +17,42 @@ select {
     font-size: 100%;
     padding: 0; margin: 0;
 }
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { 
+    display: none; 
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+    appearance: none;
+    
+    width: 400px;
+    height: 40px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+
+input[type="search"]:hover,
+input[type="search"]:focus {
+    border: 3px solid blue;
+}
+
+input[type="search"]:focus {
+    background: rgba(238, 235, 235, 0.9);
+}
+
+div {
+    display: inline;
+    position: relative;
+}
+
+div > img {
+    position: absolute;
+    top: 0px;
+    left: 5px
+}
