@@ -1,0 +1,25 @@
+.container1 {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+}
+
+.item {
+    background-color: cyan;
+    border: 1px solid black;
+    text-align: center;  
+}
+
+.first-row {
+    background-color: palevioletred;
+}
+
+.last-column {
+    background-color: purple;
+}
+
+.container2 {
+    display: inline-grid;
+    grid-template: 40px 40px 40px 40px 40px / 40px 40px 40px 40px 40px;
+    background-color: lightblue;
+  }
