@@ -1,0 +1,16 @@
+.wrapper {
+    display: inline-grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 100px);
+    background-color: antiquewhite;
+    border: 1px solid black;
+}
+
+.wrapper > div {
+    background-color: burlywood;
+    border: 1px dashed black;
+}
+
+.box1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
