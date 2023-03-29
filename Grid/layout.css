@@ -1,7 +1,22 @@
+body {
+    display: flex;
+    width: 50vw;
+    height: 50vh;
+    margin: 25vh 25vw;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 207, 179);
+    background-size: cover;
+    box-sizing: border-box;
+}
+
 .wrapper {
     display: inline-grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 100px);
+    row-gap: 1em;
+    column-gap: 20px;
+
     background-color: antiquewhite;
     border: 1px solid black;
 }
@@ -29,4 +44,9 @@
 .box4 {
     grid-row: 3 / 4;
     grid-column: 2 / 4;
+}
+
+.box5 {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
 }
