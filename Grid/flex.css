@@ -101,3 +101,39 @@
     grid-row: 8 / 9;
     grid-column: 2 /6;
 }
+
+
+/* Adaptable grid */
+
+.container {
+    margin: 10px 0;
+    display: grid;
+    grid-auto-columns: minmax(15rem, auto);
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-gap: 1rem;
+}
+
+.item {
+    background: #f1e9f7;
+    border: 3px solid #a579cc;
+    color: #a579cc;
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.5rem;
+}
+
+.item2 {
+    margin: 0.5rem;
+    background: #f3edd6;
+    border: 3px solid #b59214;
+    color: #b59214;
+    padding: 3rem;
+    font-size: 2rem;
+    text-align: center;
+}
