@@ -1,0 +1,52 @@
+/* General */
+
+body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+img {
+  width: 60px;
+}
+
+div,
+* + p {
+  margin-top: 1.5rem;
+}
+
+/* Rotate */
+
+.rotateX {
+  transform: rotateX(60deg);
+}
+
+.rotateY {
+  transform: rotateY(60deg);
+}
+
+.rotateZ {
+  transform: rotateZ(60deg);
+}
+
+.rotate3D {
+  transform: rotate3d(0, 1, -1, 80deg);
+}
+
+/* Translate */
+
+.translate30 {
+  transform: perspective(100px) translateZ(30px);
+}
+
+.translate-100 {
+  transform: perspective(100px) translateZ(-100px);
+}
+
+.translate-200 {
+  transform: perspective(100px) translateZ(-200px);
+}
